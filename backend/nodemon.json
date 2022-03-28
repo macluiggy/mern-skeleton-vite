@@ -1,6 +1,6 @@
 {
   "verbose": false,
   "watch": ["./"],
-  "exec": "babel-node --extensions \".ts\" src/index.ts",
+  "exec": "NODE_ENV=dev vite dev",
   "ext": "ts, json, js"
 }
