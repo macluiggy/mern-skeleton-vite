@@ -5,7 +5,10 @@ import expressJwt from "express-jwt";
 import { RequestWithProfile, RequestWithAuth } from "../types";
 import config from "../config/config";
 const { jwtSecret } = config;
-require("dotenv").config();
+// require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config();
+
 const signin: RequestHandler = async (req, res) => {
   try {
     const { email, password, _id, name } = req.body; // destructuring the email and password from the request body
